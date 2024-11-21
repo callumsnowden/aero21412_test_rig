@@ -27,3 +27,5 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+test-rig-black-box/~test-rig-black-box.kicad_sch.lck
+test-rig-black-box/manufacturing/test-rig-black-box.zip
