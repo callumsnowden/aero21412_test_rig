@@ -2637,151 +2637,6 @@
 				)
 			)
 		)
-		(symbol "Device:D_TVS_Small"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_TVS_Small"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode TVS thyrector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_TVS_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.016) (xy 0 1.016) (xy 0 -1.016) (xy -0.508 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.016) (xy -1.27 -1.016) (xy 1.27 1.016) (xy 1.27 -1.016) (xy -1.27 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_TVS_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:LED_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3964,6 +3819,139 @@
 					(at 0 -2.54 90)
 					(length 0.762)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Diode:SMAJ5.0A"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMAJ5.0A"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "400W unidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "unidirectional diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMAJ5.0A_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMAJ5.0A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7240,6 +7228,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 135.89) (xy 83.82 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271859fb-d866-4837-9469-4002b8f61b2f")
+	)
+	(wire
+		(pts
 			(xy 224.79 160.02) (xy 226.06 160.02)
 		)
 		(stroke
@@ -7760,16 +7758,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 135.89) (xy 83.82 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53669986-97f9-40c0-9aae-6b65e18a1306")
-	)
-	(wire
-		(pts
 			(xy 33.02 190.5) (xy 33.02 193.04)
 		)
 		(stroke
@@ -8180,7 +8168,17 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 242.57) (xy 39.37 250.19)
+			(xy 44.45 250.19) (xy 44.45 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73b46e2f-06d9-4b91-955d-2ad3faebf36f")
+	)
+	(wire
+		(pts
+			(xy 39.37 242.57) (xy 39.37 251.46)
 		)
 		(stroke
 			(width 0)
@@ -8227,16 +8225,6 @@
 			(type default)
 		)
 		(uuid "76d52c1a-32b6-46ba-a736-3dd6d40d4b10")
-	)
-	(wire
-		(pts
-			(xy 160.02 88.9) (xy 160.02 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76d5c4fa-1c5c-439d-a073-0663d3e2b232")
 	)
 	(wire
 		(pts
@@ -8820,7 +8808,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 142.24) (xy 71.12 151.13)
+			(xy 71.12 144.78) (xy 71.12 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8837,16 +8825,6 @@
 			(type default)
 		)
 		(uuid "a1d0b7c5-d779-4fd4-b534-bd9153aa028b")
-	)
-	(wire
-		(pts
-			(xy 44.45 247.65) (xy 44.45 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a21926c5-1a71-4e76-8383-3ce8d200d7ff")
 	)
 	(wire
 		(pts
@@ -9280,6 +9258,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 91.44) (xy 160.02 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c04a4288-ebd3-4a19-805a-409217b64bce")
+	)
+	(wire
+		(pts
 			(xy 170.18 194.31) (xy 180.34 194.31)
 		)
 		(stroke
@@ -9400,16 +9388,6 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 137.16) (xy 323.85 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cad4d09a-f4df-4a79-9972-17b9e8efee52")
-	)
-	(wire
-		(pts
 			(xy 140.97 81.28) (xy 140.97 90.17)
 		)
 		(stroke
@@ -9417,16 +9395,6 @@
 			(type default)
 		)
 		(uuid "cae017d2-f55a-4339-bc54-b8899a8cbf92")
-	)
-	(wire
-		(pts
-			(xy 44.45 240.03) (xy 44.45 242.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cafe74f9-3c8c-4c25-a0bc-af4c4199ec5f")
 	)
 	(wire
 		(pts
@@ -9770,6 +9738,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 240.03) (xy 44.45 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8a85a1c-f27c-4a62-862c-dbc73d8d02cd")
+	)
+	(wire
+		(pts
 			(xy 152.4 24.13) (xy 149.86 24.13)
 		)
 		(stroke
@@ -9827,6 +9805,16 @@
 			(type default)
 		)
 		(uuid "edbd77c6-1a6b-4ddb-9765-61200554b7ad")
+	)
+	(wire
+		(pts
+			(xy 323.85 139.7) (xy 323.85 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee7ce16a-518a-43a0-b3c8-33eb782868b1")
 	)
 	(wire
 		(pts
@@ -11667,8 +11655,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 71.12 139.7 90)
+		(lib_id "Diode:SMAJ5.0A")
+		(at 71.12 140.97 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11677,25 +11665,25 @@
 		(fields_autoplaced yes)
 		(uuid "1ea57d71-8df1-41ee-b7f1-02df708fbab3")
 		(property "Reference" "D5"
-			(at 73.66 138.4299 90)
+			(at 73.66 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "SMAJ5.0A/TR13"
-			(at 73.66 140.9699 90)
+			(at 73.66 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 71.12 139.7 0)
+			(at 71.12 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11704,7 +11692,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 139.7 0)
+			(at 71.12 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11712,8 +11700,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 71.12 139.7 0)
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
+			(at 71.12 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11722,7 +11710,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 71.12 139.7 0)
+			(at 71.12 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11731,7 +11719,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "SMAJ5.0A/TR13"
-			(at 71.12 139.7 0)
+			(at 71.12 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12693,7 +12681,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 250.19 0)
+		(at 39.37 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12702,7 +12690,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a45e963-1123-4703-a769-ec1fe626853a")
 		(property "Reference" "#PWR034"
-			(at 39.37 256.54 0)
+			(at 39.37 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12711,7 +12699,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 255.27 0)
+			(at 39.37 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12719,7 +12707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 250.19 0)
+			(at 39.37 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12728,7 +12716,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 250.19 0)
+			(at 39.37 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12737,7 +12725,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 250.19 0)
+			(at 39.37 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13439,7 +13427,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 250.19 0)
+		(at 44.45 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13448,7 +13436,7 @@
 		(fields_autoplaced yes)
 		(uuid "43dd9e89-4a50-41d7-b0bb-74325dc48fa3")
 		(property "Reference" "#PWR036"
-			(at 44.45 256.54 0)
+			(at 44.45 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13457,7 +13445,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 255.27 0)
+			(at 44.45 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13465,7 +13453,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 250.19 0)
+			(at 44.45 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13474,7 +13462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 250.19 0)
+			(at 44.45 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13483,7 +13471,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 250.19 0)
+			(at 44.45 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13919,8 +13907,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 160.02 86.36 90)
+		(lib_id "Diode:SMAJ5.0A")
+		(at 160.02 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13929,25 +13917,25 @@
 		(fields_autoplaced yes)
 		(uuid "4fa6c5f7-e00e-4a25-902f-1ea6a6950b58")
 		(property "Reference" "D4"
-			(at 162.56 85.0899 90)
+			(at 162.56 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "SMAJ5.0A/TR13"
-			(at 162.56 87.6299 90)
+			(at 162.56 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 160.02 86.36 0)
+			(at 154.94 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13956,7 +13944,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 86.36 0)
+			(at 160.02 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13965,7 +13953,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 160.02 86.36 0)
+			(at 160.02 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13974,7 +13962,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 160.02 86.36 0)
+			(at 160.02 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13983,7 +13971,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "SMAJ5.0A/TR13"
-			(at 160.02 86.36 0)
+			(at 160.02 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17486,35 +17474,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 44.45 245.11 90)
+		(lib_id "Diode:SMAJ5.0A")
+		(at 44.45 246.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "93a10162-f65d-4fee-972e-7b162c858eb9")
 		(property "Reference" "D1"
-			(at 46.99 243.8399 90)
+			(at 46.99 245.1099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "SMAJ5.0A/TR13"
-			(at 46.99 246.3799 90)
+			(at 46.99 247.142 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 44.45 245.11 0)
+			(at 39.37 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17523,7 +17510,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 245.11 0)
+			(at 44.45 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17532,7 +17519,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 44.45 245.11 0)
+			(at 44.45 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17541,7 +17528,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 44.45 245.11 0)
+			(at 44.45 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17550,7 +17537,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "SMAJ5.0A/TR13"
-			(at 44.45 245.11 0)
+			(at 44.45 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20609,7 +20596,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 91.44 0)
+		(at 160.02 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20617,7 +20604,7 @@
 		(dnp no)
 		(uuid "e0c2207b-d197-4979-b693-bfcc11a0c71f")
 		(property "Reference" "#PWR055"
-			(at 160.02 97.79 0)
+			(at 160.02 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20626,7 +20613,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 95.504 0)
+			(at 160.02 96.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20634,7 +20621,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 91.44 0)
+			(at 160.02 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20643,7 +20630,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 91.44 0)
+			(at 160.02 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20652,7 +20639,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 91.44 0)
+			(at 160.02 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20800,8 +20787,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 323.85 134.62 90)
+		(lib_id "Diode:SMAJ5.0A")
+		(at 323.85 135.89 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20810,25 +20797,25 @@
 		(fields_autoplaced yes)
 		(uuid "e33a5722-14b0-4ca7-93f1-4e3350a0b299")
 		(property "Reference" "D2"
-			(at 326.39 133.3499 90)
+			(at 326.39 134.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "SMAJ5.0A/TR13"
-			(at 326.39 135.8899 90)
+			(at 326.39 137.1599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 323.85 134.62 0)
+			(at 318.77 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20837,7 +20824,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 323.85 134.62 0)
+			(at 323.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20846,7 +20833,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 323.85 134.62 0)
+			(at 323.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20855,7 +20842,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 323.85 134.62 0)
+			(at 323.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20864,7 +20851,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "SMAJ5.0A/TR13"
-			(at 323.85 134.62 0)
+			(at 323.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
