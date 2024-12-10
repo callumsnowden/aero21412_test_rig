@@ -29,3 +29,4 @@ fp-info-cache
 *.csv
 test-rig-black-box/~test-rig-black-box.kicad_sch.lck
 test-rig-black-box/manufacturing/test-rig-black-box.zip
+test-rig-black-box/~test-rig-black-box.kicad_pcb.lck

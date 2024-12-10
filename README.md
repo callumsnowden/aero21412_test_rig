@@ -16,3 +16,12 @@ A "black box" PCB that provides the interface between a number of sensors on the
 
 Measurements are transmitted at 20 Hz. The packet consists of a start character of `<` followed by an incrementing three-digit frame identifier `AAA`. After this follows a three decimal place measurement of thrust in Newtons `BB.BBB` and then a three decimal place measurement of torque in Newton metres `CC.CCC`. An end character `>` terminates the packet.
 
+## Hardware
+
+A Raspberry Pi Pico (RP2040) handles interfacing the load cells and photointerruptor and is responsible for transmitting UART messages plus generating an analogue voltage representing RPM.
+
+### Sensors
+
+- One load cell for thrust measurement (Siemens 7MH5102-1PD00) with a rated load of 5kg
+- One load cell (analogue voltage output) for torque measurement (TE Connectivity FC2231-0000-0010-L) with a rated load of 10lbf (13.5 Nm) and a voltage output of 0.5-4.5V
+- Photointerruptor for RPM measurement
