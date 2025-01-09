@@ -490,8 +490,8 @@
       "plot": "manufacturing/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
+      "step": "test-rig-black-box.step",
+      "svg": "graphics/",
       "vrml": ""
     },
     "page_layout_descr_file": ""

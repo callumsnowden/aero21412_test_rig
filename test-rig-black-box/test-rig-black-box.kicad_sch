@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "AERO21412 \"Black Box\"")
-		(date "2024-10-08")
-		(rev "1.0")
+		(date "2025-01-09")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LMV321"
