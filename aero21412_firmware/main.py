@@ -159,9 +159,7 @@ def main():
         hx_val = hx_val - thrust_zero_value
         
         # Calculate force on thrust load cell
-        thrust = round(hx_val / thrust_scale_const, 3)
-        if thrust < 0:
-            thrust = 0
+        thrust = abs(round(hx_val / thrust_scale_const, 3))
         
         # Convert ADC reading into voltage - ignore any negative swing in the readings (ADC is pseudo-differential)
         raw_adc_data = i2c.readfrom(ads1100_addr, 3)
