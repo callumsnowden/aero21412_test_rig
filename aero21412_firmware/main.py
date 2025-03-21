@@ -9,6 +9,7 @@ v0.1 12/2024
 
 Dependencies:
 hx711-pico-mpy https://github.com/endail/hx711-pico-mpy
+    - Copy entire "src" folder to the Pico, then delete "__init.py__"
 '''
 
 # Functions
@@ -99,7 +100,7 @@ tacho_freq = 0.0 # Calculated frequency based on interrupt timing
 torque_zero_value = 0 # Stored when zero button is pressed
 thrust_zero_value = 0 # Stored when zero button is pressed
 raw_adc_data = [] # Buffer for data from I2C ADC
-max_rpm = 10000 # Maximum expected input RPM
+max_rpm = 25000 # Maximum expected input RPM
 max_frequency = (max_rpm / 60) # Calculated, used as top of map value for PWM output
 torque_arm_length = 50 # Length from motor centre point to load cell, in mm
 
@@ -180,9 +181,12 @@ def main():
         
         # Scale tacho frequency to PWM range and update
         tacho_pwm.duty_u16(int(num_to_range(tacho_freq, 0, max_frequency, 0, 65535)))
+
+        # Quickly calculate RPM for debugging purposes
+        motor_rpm = tacho_freq * 60
         
         # Debug printing to USB serial interface
-        print("ADCV {}V, HX711 {}, TQF {:0>2.2f}N, TQ {:0>2.3f}Nm, THR {:0>2.3f}N, TACHO {:0>2.1f}Hz, CAL {}".format(adc_voltage, hx_val, torque_force, torque, thrust, tacho_freq, LED_STATE))
+        print("ADCV {}V, HX711 {}, TQF {:0>2.2f}N, TQ {:0>2.3f}Nm, THR {:0>2.3f}N, TACHO {:0>2.1f} RPM, CAL {}".format(adc_voltage, hx_val, torque_force, torque, thrust, motor_rpm, LED_STATE))
         
         led_pin.value(LED_STATE)
 
